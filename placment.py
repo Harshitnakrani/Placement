@@ -8,7 +8,7 @@ def Predict(input_data):
     inpute_data_as_numpy_array = np.asarray(input_data)
     input_data_reshaped = inpute_data_as_numpy_array.reshape(1, -1)
     prediction = placement_model.predict(input_data_reshaped)
-    return prediction[0]
+    return prediction
 
 st.title("Placement Prediction")
 
